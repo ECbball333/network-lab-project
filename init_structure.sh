@@ -10,3 +10,6 @@ mkdir -p linkedin-posts
 
 echo "# Network Lab Project" > README.md
 echo "✅ Folder structure created."
+
+# Add placeholder files to ensure folders are tracked
+find . -type d -empty -exec touch {}/.gitkeep \;
