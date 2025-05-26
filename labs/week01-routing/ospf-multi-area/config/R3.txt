@@ -1,0 +1,13 @@
+hostname R3
+!
+interface Loopback0
+ ip address 3.3.3.3 255.255.255.255
+!
+interface GigabitEthernet0/0
+ ip address 10.0.1.2 255.255.255.0
+!
+router ospf 1
+ router-id 3.3.3.3
+ network 10.0.1.0 0.0.0.255 area 10
+ network 3.3.3.3 0.0.0.0 area 10
+
