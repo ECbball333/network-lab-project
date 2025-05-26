@@ -11,25 +11,6 @@ Design and deploy a multi-area OSPF topology using EVE-NG that demonstrates:
 
 ---
 
-## 🖥️ Topology Overview
-
-         Area 0
-     +-------------+
-     |             |
-   [R1]--------- [R2]
-     |             |
-     |             |
-  Area 10       Area 20
-     |             |
-   [R3]         [R4]
-
-
-- R1, R2: ABRs between backbone and respective areas
-- R3: Internal router in Area 10
-- R4: Internal router in Area 20
-
----
-
 ## 🔧 Configuration Tasks
 
 1. Assign IP addresses and loopbacks (used as Router-IDs)
